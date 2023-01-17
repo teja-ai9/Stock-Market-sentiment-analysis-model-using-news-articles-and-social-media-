@@ -1,0 +1,32 @@
+<table>
+  <tr>
+    <th>Date</th>
+    <th>Vader Score</th>
+    <th>Textblob Score</th>
+    <th>EmoLex Score</th>
+    <th>Anger</th>
+    <th>Anticipation</th>
+    <th>Fear</th>
+    <th>Joy</th>
+    <th>Sadness</th>
+    <th>Surprise</th>
+    <th>Trust</th>
+    <th>Disgust</th>
+   </tr>
+  {% for row in data %}
+  <tr>
+    <td bgcolor="yellow">{{ row.Date }}</td>
+    <td bgcolor="pink">{{ row.Vader_Compound_Score }}</td>
+    <td bgcolor="pink">{{ row.Textblob_Score }}</td>
+    <td bgcolor="pink">{{ row.EmoLex_Score }}</td>
+    <td bgcolor="orange">{{ row.Anger }}</td>
+    <td bgcolor="silver">{{ row.Anticipation }}</td>
+    <td bgcolor="orange">{{ row.Fear }}</td>
+    <td bgcolor="silver">{{ row.Joy }}</td>
+    <td bgcolor="orange">{{ row.Sadness }}</td>
+    <td bgcolor="silver">{{ row.Surprise }}</td>
+    <td bgcolor="silver">{{ row.Trust }}</td>
+    <td bgcolor="orange">{{ row.Disgust }}</td>
+   </tr>
+  {% endfor %}
+</table>

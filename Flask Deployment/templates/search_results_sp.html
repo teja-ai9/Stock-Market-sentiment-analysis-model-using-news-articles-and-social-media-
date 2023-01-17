@@ -1,0 +1,12 @@
+<table>
+  <tr>
+    <th>Date</th>
+    <th>Stock Price Prediction</th>
+   </tr>
+  {% for row in data %}
+  <tr>
+  	<td bgcolor="yellow">{{ row.Date }}</td>
+  	<td style="font-weight: bold"; "font-size:20px;" bgcolor="#ff0000">{{ row.Stock_Price_Prediction }}</td>
+   </tr>
+  {% endfor %}
+</table>

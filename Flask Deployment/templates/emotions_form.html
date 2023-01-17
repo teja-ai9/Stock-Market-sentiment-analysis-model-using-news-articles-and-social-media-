@@ -1,0 +1,21 @@
+<html>
+  <head>
+    <title>Stock Price Prediction based on Sentimental Analysis</title>
+  </head>
+  <body>
+    <h1>Stock Price Prediction</h1>
+    <p>Enter a date to see the predicted stock price for that day:</p>
+    <form action="/predict" method="POST">
+      <input type="date" name="Date" required min="2023-01-05" max="2023-01-05">
+      <button type="submit">Predict</button>
+    </form>
+
+    <h1>Emotions Calculations</h1>
+	<p>Enter a date to see the emotions for the stock on that day:</p>
+	<form action="/emotions" method="POST">
+	  <input type="date" name="Date" required min="2023-01-05" max="2023-01-05">
+	  <button type="submit">Predict</button>
+    </form>
+  </body>
+</html>
+
